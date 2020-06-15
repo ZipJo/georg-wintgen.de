@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Georg Wittgen | Architekt</title>
+	<meta name="description" content="Georg Wittgen | Architekturbüro" />
+	<meta name="keywords" content="Architektur" />
+	<meta name="author" content="www.jonas-brueggen.de" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://use.typekit.net/tmh0agr.css" media="all" />
+	<link rel="stylesheet" href="css/gw_standard.css" media="all" />
+	<link rel="icon" href="/files/favicon.ico">
+	<script async src="js/ajax_scripts.js"></script>
+	<script async src="js/scripts.js"></script>
+	<script async src="js/smoothscroll_polyfill.js"></script>
+	@@include('index_inline_css.html')
+</head>
+<body>
+	<div class="page_loader">
+		<div class="loader"></div>
+	</div>
+	<div class="popup_container" onclick="this.classList.remove('active');"></div>
+
+	<div id="id_wrapper" class="wrapper hide_container">
+		<!-- page wrapper starts here -->
+		<header>
+			<div class="header_logo">
+				<a href="#/home">
+					<h1>Georg Wintgen</h1>
+					<h2>Dipl.-Ing. Architekt BDB</h2>
+				</a>
+			</div>
+			<nav>
+				<span class="mobile_menu" id="id_mobile_menu" onclick="toggleMobileMenu(this);"></span>
+				<ul>
+					<li><a href="#/portfolio">portfoli<span class="last_letter">o</span></a></li><span></span>
+					<li><a href="#/about">über&nbsp;mic<span class="last_letter">h</span></a></li><span></span>
+					<li><a href="#/contact">kontak<span class="last_letter">t</span></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main" id="id_ajax_wrap">
+		</main>
+		<footer></footer>
+		<!-- end of page wrapper -->
+	</div>
+	@@include('index_inline_js.html')
+</body>
+</html>
